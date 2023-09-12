@@ -1,0 +1,30 @@
+.contain {
+    background-color: #1abc9c;
+    width: 100%;
+    margin: auto;
+    height: 80vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lin {
+    width: 100px;
+    height: 6px;
+    margin: 16px;
+}
+ 
+.cen{
+    display: flex;
+    width: 70%;
+    gap: 30px;
+    font-size: 15px;
+}

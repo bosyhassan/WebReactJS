@@ -1,0 +1,126 @@
+.contain {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.wh {
+    color: #2c3e50;
+}
+
+.lin {
+    width: 100px;
+    height: 6px;
+    margin: 16px;
+    background-color: #2c3e50;
+}
+
+.forma {
+    width: 50%;
+}
+.cel{
+    position: relative;
+}
+.cel::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    opacity: 0%;
+    z-index: 99;
+    transition: .5s;
+}
+
+form div {
+    position: relative;
+    padding-bottom: 10px ;
+}
+/*
+form .one::before{
+    content: "useName :";
+    position: absolute;
+    font-size: 13px;
+    top: 20px;
+    left: 15px;
+    opacity: 0;
+    z-index: 99;
+    transition: .5s;
+}
+
+form .one:hover::before{
+    top: -10px;
+    left: 15px;
+    opacity: 100%;
+}
+
+form .two::before{
+    content: "userAge :";
+    position: absolute;
+    font-size: 13px;
+    top: 20px;
+    left: 15px;
+    opacity: 0;
+    z-index: 99;
+    transition: .5s;
+}
+form .two:hover::before{
+    top: -10px;
+    left: 15px;
+    opacity: 100%;
+}
+
+form .three::before{
+    content: "userEmail :";
+    position: absolute;
+    font-size: 13px;
+    top: 20px;
+    left: 15px;
+    opacity: 0;
+    z-index: 99;
+    transition: .5s;
+}
+form .three:hover::before{
+    top: -10px;
+    left: 15px;
+    opacity: 100%;
+}
+
+form .four::before{
+    content: "userPassword :";
+    position: absolute;
+    font-size: 13px;
+    top: 20px;
+    left: 15px;
+    opacity: 0;
+    z-index: 99;
+    transition: .5s;
+}
+form .four:hover::before{
+    top: -10px;
+    left: 15px;
+    opacity: 100%;
+}
+*/
+
+.label{
+    position: absolute;
+    top: 20px ;
+    left: 10px ;
+    z-index: -1;
+    opacity: 0;
+    transition: .5s;
+    color: green;
+}

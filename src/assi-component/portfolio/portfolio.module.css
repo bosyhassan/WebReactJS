@@ -1,0 +1,82 @@
+.contain {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.wh {
+    color: #2c3e50;
+}
+
+.lin {
+    width: 100px;
+    height: 6px;
+    margin: 16px;
+    background-color: #2c3e50;
+}
+
+.forma {
+    width: 50%;
+}
+
+.photos {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.photos div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+.photos div::before{
+    content: "";
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0%;
+    border-radius: 8px;
+    transition: .5s;
+}
+.photos div:hover::before{
+    opacity: 85%;
+}
+
+.photos div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.photos div i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    opacity: 0%;
+    transition: .5s;
+}
+.photos div:hover i{
+    opacity: 80%;
+}
